@@ -1,0 +1,4 @@
+=== 0.0.1 2010-09-17
+
+* start project
+  * extract bit.ly, tinyurl using hugeurl.
