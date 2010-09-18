@@ -6,10 +6,15 @@ require 'uri'
 require 'open-uri'
 
 module Hugeurl
-  VERSION = '0.0.1'
+  VERSION = '0.0.2'
   def Hugeurl.get(url)
     res = open("http://search.twitter.com/hugeurl?url=#{url.to_s}").read
     URI.parse(res)
   end
 end
 
+class URI::HTTP
+  def to_huge
+    Hugeurl.get(self)
+  end
+end
