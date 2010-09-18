@@ -11,7 +11,7 @@ expand tinyurl and bit.ly
 
     require 'rubygems'
     require 'hugeurl'
-    puts Hugeurl.get("http://bit.ly/d4VYD2") # get expanded URI instance
+    puts URI.parse("http://bit.ly/d4VYD2").to_huge # get expanded URI instance
 
 == REQUIREMENTS:
 
