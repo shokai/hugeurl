@@ -28,3 +28,4 @@ describe Hugeurl, 'expand URI instance "http://bit.ly/d4VYD2"' do
     @res.to_s.should == 'http://shokai.org'
   end
 end
+
