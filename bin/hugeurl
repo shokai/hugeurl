@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'rubygems'
 require 'hugeurl'
+#require File.dirname(__FILE__)+'/../lib/hugeurl'
 
 unless ARGV.empty?
   puts URI.parse(ARGV.shift).to_huge

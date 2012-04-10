@@ -4,7 +4,7 @@
 
 == DESCRIPTION:
 
-expand tinyurl and bit.ly
+expand tinyurl, bit.ly, t.co and more.
 
 
 == SYNOPSIS:
