@@ -6,9 +6,6 @@ lib/hugeurl.rb
 script/console
 script/destroy
 script/generate
-spec/hugeurl_spec.rb
-spec/uri_spec.rb
-spec/spec.opts
-spec/spec_helper.rb
-tasks/rspec.rake
 examples/example.rb
+test/test_helper.rb
+test/test_hugeurl.rb
