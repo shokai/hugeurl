@@ -1,3 +1,8 @@
+
+=== 0.0.3 2012-04-10
+
+* use HTTP-HEAD and check location param of HTTP Response.
+
 === 0.0.1 2010-09-17
 
 * start project

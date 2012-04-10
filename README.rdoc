@@ -15,7 +15,7 @@ expand tinyurl and bit.ly
 
 == REQUIREMENTS:
 
-* http://search.twitter.com/hugeurl?url=
+* Ruby 1.8+
 
 == INSTALL:
 

@@ -3,13 +3,15 @@ $:.unshift(File.dirname(__FILE__)) unless
 
 require 'rubygems'
 require 'uri'
-require 'open-uri'
+require 'net/http'
 
 module Hugeurl
-  VERSION = '0.0.2'
-  def Hugeurl.get(url)
-    res = open("http://search.twitter.com/hugeurl?url=#{url.to_s}").read
-    URI.parse(res)
+  VERSION = '0.0.3'
+  def self.get(url)
+    url = URI.parse url unless url.class.to_s =~ /^URI::/
+    res = Net::HTTP.start(url.host, url.port).
+      head(url.path.size < 1 ? '/' : url.path)
+    URI.parse res['location'] rescue return url
   end
 end
 
