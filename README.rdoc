@@ -13,6 +13,16 @@ expand tinyurl and bit.ly
     require 'hugeurl'
     puts URI.parse("http://bit.ly/d4VYD2").to_huge # get expanded URI instance
 
+
+== Hugeurl command
+
+    % hugeurl http://bit.ly/d4VYD2
+
+or
+
+    % cat foo.txt | hugeurl
+
+
 == REQUIREMENTS:
 
 * Ruby 1.8+

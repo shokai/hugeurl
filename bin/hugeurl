@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'hugeurl'
+
+unless ARGV.empty?
+  puts URI.parse(ARGV.shift).to_huge
+else
+  pat = /(https?:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:\@&=+\$,%#]+)/
+  ARGF.each do |line|
+    puts line.split(pat).map{|i|
+      begin
+        res = i =~ pat ? URI.parse(i).to_huge.to_s : i
+      rescue
+        res = i
+      end
+      res
+    }.join('')
+  end
+end

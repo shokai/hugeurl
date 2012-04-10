@@ -9,3 +9,4 @@ script/generate
 examples/example.rb
 test/test_helper.rb
 test/test_hugeurl.rb
+bin/hugeurl

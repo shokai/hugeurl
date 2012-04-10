@@ -6,7 +6,7 @@ require 'uri'
 require 'net/http'
 
 module Hugeurl
-  VERSION = '0.0.3'
+  VERSION = '0.0.4'
   def self.get(url)
     url = URI.parse url unless url.class.to_s =~ /^URI::/
     res = Net::HTTP.start(url.host, url.port).
