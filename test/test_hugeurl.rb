@@ -9,15 +9,15 @@ class TestHugeurl < Test::Unit::TestCase
   end
 
   def test_response
-    assert true if @tco.class == URI::HTTP
+    assert @tco.class == URI::HTTP
   end
 
   def test_tco
-    assert true if @tco.to_s == @source
+    assert @tco.to_s == @source
   end
 
   def test_tinyurl
-    assert true if @tinyurl.to_s == @source
+    assert @tinyurl.to_s == @source
   end
 
 end
