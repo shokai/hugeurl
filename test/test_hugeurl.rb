@@ -6,6 +6,7 @@ class TestHugeurl < Test::Unit::TestCase
     @source = "http://shokai.org"
     @tinyurl = URI.parse("http://tinyurl.com/242tthb").to_huge
     @tco = URI.parse("http://t.co/sdMbEC7n").to_huge
+    @bitly_tinyurl_nested = URI.parse("http://bit.ly/TSLl6M").to_huge
   end
 
   def test_response
@@ -20,4 +21,7 @@ class TestHugeurl < Test::Unit::TestCase
     assert @tinyurl.to_s == @source
   end
 
+  def test_bitly_tinyurl_nested
+    assert @bitly_tinyurl_nested.to_s == @source
+  end
 end

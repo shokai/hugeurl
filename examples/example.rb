@@ -16,3 +16,6 @@ puts " => #{tco.to_huge}"
 
 puts gyamp = URI.parse("http://gyamp.com/shokai/shokai")
 puts " => #{gyamp.to_huge}"
+
+puts bitly_tinyurl_nested = URI.parse("http://bit.ly/TSLl6M")
+puts " => #{bitly_tinyurl_nested.to_huge}"
