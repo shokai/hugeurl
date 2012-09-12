@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
-require File.dirname(__FILE__)+'/../lib/hugeurl'
+$:.unshift File.expand_path '../lib', File.dirname(__FILE__)
+
+require 'rubygems'
+require 'hugeurl'
 
 puts tinyurl = "http://tinyurl.com/242tthb"
 puts " => " + Hugeurl.get(tinyurl).to_s

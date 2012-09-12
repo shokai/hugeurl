@@ -1,3 +1,3 @@
 require 'stringio'
 require 'test/unit'
-require File.dirname(__FILE__) + '/../lib/hugeurl'
+require File.expand_path '../lib/hugeurl', File.dirname(__FILE__)
