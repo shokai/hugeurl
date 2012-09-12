@@ -4,7 +4,7 @@ require 'net/http'
 require 'net/https'
 
 module Hugeurl
-  VERSION = '0.0.6'
+  VERSION = '0.0.7'
   def self.get(uri)
     uri = URI.parse uri unless uri.class.to_s =~ /^URI::/
     loop do
