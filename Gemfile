@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'newgem'
-gem 'hoe'
+# Specify your gem's dependencies in hugeurl.gemspec
+gemspec
