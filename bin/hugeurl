@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
+$:.unshift File.expand_path '../lib', File.dirname(__FILE__)
 require 'rubygems'
 require 'hugeurl'
-#require File.expand_path '../lib/hugeurl', File.dirname(__FILE__)
 
 unless ARGV.empty?
   puts URI.parse(ARGV.shift).to_huge
