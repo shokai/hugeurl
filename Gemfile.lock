@@ -10,6 +10,7 @@ GEM
     rake (10.0.4)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
