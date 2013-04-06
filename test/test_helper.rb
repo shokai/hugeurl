@@ -1,3 +1,5 @@
-require 'stringio'
-require 'test/unit'
-require File.expand_path '../lib/hugeurl', File.dirname(__FILE__)
+require 'rubygems'
+require 'minitest/autorun'
+
+$:.unshift File.expand_path '../lib', File.dirname(__FILE__)
+require 'hugeurl'
